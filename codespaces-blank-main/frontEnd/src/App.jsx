@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ClassSelection from './ClassSelection'; // Relativní cesta
+import './style.css';
+
 
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
@@ -26,5 +28,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

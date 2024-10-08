@@ -1,0 +1,124 @@
+/* style.css */
+
+/* Základní styly pro tělo dokumentu */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Hlavní kontejner */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Nadpisy */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Seznamy */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #d1e7dd;
+}
+
+/* Formuláře */
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Tlačítka */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Chybové zprávy */
+.error-message {
+  color: #dc3545;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Styly pro průměr */
+.average-grade {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Media query pro responsivní design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3, h4, h5 {
+    font-size: 1.2rem;
+  }
+}
